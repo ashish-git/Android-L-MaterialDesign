@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -13,7 +14,7 @@ import java.util.List;
  */
 public class EmployeeRecyclerViewAdapter extends RecyclerView.Adapter<EmployeeRecyclerViewAdapter.ViewHolder> implements View.OnClickListener {
     private List<Employee> mEmployeeDataset;
-    //private OnRecyclerViewItemClickListener<Employee> itemClickListener;
+    private OnRecyclerViewItemClickListener<Employee> itemClickListener;
     private int mItemLayout;
 
     // Provide a suitable constructor (depends on the kind of dataset)
@@ -64,10 +65,10 @@ public class EmployeeRecyclerViewAdapter extends RecyclerView.Adapter<EmployeeRe
 
     @Override
     public void onClick(View view) {
-        /*if (itemClickListener != null) {
+        if (itemClickListener != null) {
             Employee model = (Employee) view.getTag();
-            //itemClickListener.onItemClick(view, model);
-        }*/
+            itemClickListener.onItemClick(view, model);
+        }
     }
 
     public void add(Employee item, int position) {
@@ -81,8 +82,8 @@ public class EmployeeRecyclerViewAdapter extends RecyclerView.Adapter<EmployeeRe
         notifyItemRemoved(position);
     }
 
-    /*public void setOnItemClickListener(OnRecyclerViewItemClickListener<Employee> listener) {
+    public void setOnItemClickListener(OnRecyclerViewItemClickListener<Employee> listener) {
         this.itemClickListener = listener;
-    }*/
+    }
 
 }

@@ -10,12 +10,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewAnimationUtils;
-import android.widget.Toast;
 
 /**
  * Created by ashish.sharma on 30/6/2014.
  */
-public class EmployeeListActivity extends Activity implements EmployeeListFragment.OnFragmentInteractionListener {
+public class EmployeeListActivity extends Activity {
     private EmployeeListFragment employeeListFragment;
 
     @Override
@@ -51,12 +50,6 @@ public class EmployeeListActivity extends Activity implements EmployeeListFragme
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public void onEmployeeItemSelected(int position) {
-        // Toast the content for now
-        //Toast.makeText(this, Employee.EMPLOYEE_ITEMS.get(position).name, Toast.LENGTH_SHORT).show();
     }
 
     public void onFloatAddEmployeeButtonClicked(View view) {
