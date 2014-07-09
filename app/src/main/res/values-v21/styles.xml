@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Material.Light">
+        <!--Primary Colors-->
+        <item name="android:colorPrimary">@color/primaryColor</item>
+        <!-- <item name="android:colorPrimaryDark">@color/primaryDarkColor</item> -->
+
+        <!--Background Color-->
+        <item name="android:colorBackground">@color/backgroundColor</item>
+
+        <!--Accent Colors-->
+        <item name="android:colorAccent">@color/primaryAccentColor</item>
+        <item name="android:colorControlHighlight">@color/primaryAccentLightColor</item>
+
+        <!--Status and Navigation Bar Colors-->
+        <item name="android:navigationBarColor">@color/primaryDarkColor</item>
+        <item name="android:statusBarColor">@color/primaryDarkColor</item>
+
+        <!--Window theme features-->
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowExitTransitionOverlap">true</item>
+
+        <!--ActionBar theme-->
+        <item name="android:actionBarTheme">@style/MainActionBarThemeOverlay</item>
+        <item name="android:actionBarStyle">@style/MainActionBarTheme</item>
+
+        <!--Enable the overlay mode for the ActionBar-->
+        <item name="android:windowActionBarOverlay">false</item>
+        <!--Remove the line between the status bar and ActionBar-->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--Main ActionBar Theme-->
+    <style name="MainActionBarTheme" parent="android:Widget.Material.Light.ActionBar">
+        <item name="android:background">@color/primaryDarkColor</item>
+        <item name="android:displayOptions">showTitle|homeAsUp</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_ab_drawer</item>
+        <item name="android:titleTextStyle">@style/MainActionBarTitleTextStyle</item>
+    </style>
+
+    <!--Main ActionBar Theme for its title-->
+    <style name="MainActionBarTitleTextStyle" parent="android:TextAppearance.Material.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/textTitleColor</item>
+    </style>
+
+    <!--Main ActionBar Theme for state colors-->
+    <style name="MainActionBarThemeOverlay" parent="">
+        <!--By default, ActionBar items are white-->
+        <!--When it's touched, the color will be light accent color-->
+        <!--When it's pressed, the color will be dark accent color-->
+        <item name="android:colorControlNormal">@android:color/white</item>
+        <item name="android:colorControlHighlight">@color/primaryAccentLightColor</item>
+        <item name="android:colorControlActivated">@color/primaryAccentDarkColor</item>
+    </style>
+</resources>

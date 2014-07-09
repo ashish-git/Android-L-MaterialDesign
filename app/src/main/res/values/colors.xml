@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textTitleColor" type="color">#FFFFFF</item>
+    <item name="primaryLightColor" type="color">#00ccc4</item>
+    <item name="primaryColor" type="color">#009993</item>
+    <item name="primaryDarkColor" type="color">#004c49</item>
+    <item name="primaryAccentLightColor" type="color">#999999</item>
+    <item name="primaryAccentColor" type="color">#7a7a7a</item>
+    <item name="primaryAccentDarkColor" type="color">#5b5b5b</item>
+
+    <item name="secondaryColor" type="color">#00d2be</item>
+
+    <item name="backgroundColor" type="color">#FFd6d6d6</item>
+</resources>

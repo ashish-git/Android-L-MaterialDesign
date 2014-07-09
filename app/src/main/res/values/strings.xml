@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android -L-MaterialDesign</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="add_new_emp">Add new employee</string>
+    <string name="float_description">A button for adding new employee object</string>
+    <string name="add_employee_name_hint">Please enter employee name</string>
+    <string name="add_employee_id_hint">Please enter employee id</string>
+    <string name="ok">OK</string>
+
+</resources>
